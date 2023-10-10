@@ -54,6 +54,22 @@ UNION  : 두 개 이상의 SELECT 문 결과를 결합해서 하나의 결과 �
            UNION 
            SELECT 열이름 FROM 테이블2;
 
+UNION SQL : 두개 이상의 SELECT 문 결과를 합쳐서 하나의 결과 집합으로 반환하는 연산자
+UNION 중복된 행을 제거하고 중복 된 행을 포함하지 않는 결과를 생성
+
+
+SELECT COLUMN1,COLUMN2, ....
+FROM TABLE1
+
+UNION
+
+SELECT COLUMN1,COLUMN2, ...
+FROM TABLE2;
+
+
+
+
+
 
 
 JOIN   : 다수의 테이블을 연결하여 데이터를 결합하는데 사용
