@@ -56,9 +56,6 @@ UNION  : 두 개 이상의 SELECT 문 결과를 결합해서 하나의 결과 �
 
 
 
-
-
-
 JOIN   : 다수의 테이블을 연결하여 데이터를 결합하는데 사용
         INNER JOIN, LEFT JOIN, RIGHT JOIN,FULL OUTER JOIN 등 
         결합유형이 다양함
