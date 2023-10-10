@@ -11,6 +11,10 @@ DDL (Data Definition Language)
 
             CREATE DATABASE : 새로운 데이터베이스를 생성
             CREATE INDEX : 인덱스를 생성하여 데이터 검색 속도 향상
+
+
+
+
               
 
     ALTER(수정) :
@@ -53,7 +57,15 @@ DDL (Data Definition Language)
                       이 권한은 보안상 주의해서 부여
                       주로 데이터베이스 관리자에게 부여 
 
-                                    
+   ALTER TABLE 테이블 이름
+MODIFY(변경하고자 하는 열의 이름 문자열유형(수정값 BYTE));
+
+예제코드 : 
+ALTER TABLE EMPLOYEE
+MODIFY(JOB VARCHAR2(20 BYTE));
+코드 설명:
+'EMPLOYEE'테이블에서 'JOB' 열에 입력된 값이 열의 최대 길이를 초과하여 문제가 발생했을 경우 
+ALTER와 MODIFY를 작성하여 JOB 열의 크기를 20 BYTE로 변경할 수 있다.                                 
 
 
 
