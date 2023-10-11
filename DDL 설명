@@ -61,8 +61,19 @@ GRANT 사용 예제 :
 
 
 
+DROP : 데이터베이스에서 객체(테이블,뷰,인덱스,사용자 등)를 삭제하는데 사용되는 sql 명령어
+       drop은 영구 삭제
+       DROP TABLE 테이블이름;
+       DROP VIEW 뷰이름;
+       DROP INDEX 인덱스이름;
+       DROP USER 사용자이름;
 
 
+
+CASCADE : 해당 명령이 연결된 객체 또는 데이터 영향 주는 방식
+          주로 삭제 명령이랑 사용
+          삭제 명령이 관련된 모든 객체나 데이터를 삭제
+         DROP TABLE 부모테이블 CASCADE CONSTRAINS;
 
 
 
